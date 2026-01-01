@@ -1,0 +1,1 @@
+will be done later for a better learning experience i did in c first  cuz i just prefer C also i didnt expect to make a interactive learning thing

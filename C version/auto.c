@@ -3,9 +3,11 @@
 #include <time.h>
 
 int main () {
-    int wins = 0; int loses = 0;
+    int wins = 0; int loses = 0; int change;
+    printf("Will you want to change in the rounds when asked or not\n1 for yes 0 for no\n");
+    scanf("%d", &change);
     srand(time(NULL));
-    for (int i2 = 0; i2 < 2000; i2++) {
+    for (int i2 = 0; i2 < 200; i2++) {
         printf("%d", i2);
         int door[3];
         door[0] = 0; door[1] = 0; door[2] = 0;
@@ -16,7 +18,6 @@ int main () {
         for (int i = 0; i < 3; i++) {
             if (door[i] != 1 && i != pick) jackshit = i;
         }
-        int change = 1;
         if (change == 1) {
             for (int i = 0; i < 3; i++) {
                 if (i != jackshit && i != pick) { 
